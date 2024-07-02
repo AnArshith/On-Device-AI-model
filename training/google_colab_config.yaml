@@ -1,0 +1,14 @@
+
+path: '/Users/arshith/Downloads/intern_srib/Data' # dataset root dir
+train: images/train # train images (relative to 'path')
+val: images/val # val images (relative to 'path')
+
+# Classes
+names:
+  0: Name
+  1: Name2
+  2: Num
+  3: DOB/reg
+  4: Expdate
+  5: Issuedate
+  6: Address
