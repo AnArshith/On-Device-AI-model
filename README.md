@@ -22,12 +22,17 @@ Using real driving license data, we design and create templates with Photoshop t
 
 ## **Training Process**
 
-- **Object Detection Models**: We train various object detection models such as **YOLOv8n**, **YOLOv10n**, and **YOLOv10s** using a dataset of 3000 images and corresponding TXT format labels.
+- **Object Detection Models**: We train various object detection models such as **YOLOv8n**, **YOLOv10n**, and **YOLOv10s** using a dataset of 3000 images and corresponding TXT format labels. You can find the training code [TrainYolov8CustomDataset](training/TrainYolov8CustomDataset.ipynb).
 
-- **OCR Integration**: The trained models are used to predict classes, and **pytesseract** OCR model is employed to extract data from the detected regions.
+- **OCR Integration**: The trained models are used to predict classes, and **pytesseract** OCR model is employed to extract data from the detected regions. The OCR implementation can be found [Predict_text_conversion](Prediction&TextConversion/image_to_text.ipynb)
 
 ## **Model Performance**
 
 The output of the **YOLOv8n** model trained on the 3000 images dataset for 25 epochs:
 
 <img width="721" alt="Screenshot 2024-07-02 at 3 21 38 PM" src="https://github.com/AnArshith/Text-extraction-model/assets/111214899/36ebab38-38cc-49a3-96c7-6aef0c62bf4a">
+
+The Performance parametrs of the models 
+- YoloV8n after 20 epochs : [V8n](trainingresults/runs_v8n/detect/train2)
+- YoloV10n after 20 epochs :  [V10n](trainingresults/runs_v10n/detect/train)
+- YoloV10s after 20 epochs : [V10s](trainingresults/v10s_train2)
